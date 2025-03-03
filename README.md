@@ -1,3 +1,5 @@
+ESTA APLICACION TODABIA ESTA EN CONSTRUCCION, USESE BAJO SU PROPIA RESPONSABILIDAD.
+
 # Selector de Paneles para Mabox Linux
 
 Una herramienta para elegir y configurar el panel de Mabox Linux entre tint2 (predeterminado) y polybar.
@@ -12,45 +14,22 @@ Una herramienta para elegir y configurar el panel de Mabox Linux entre tint2 (pr
 
 ## Instalación
 
-### Método 1: Desde el archivo tar.gz
+ + clonar repositorio 
+ + git clone https://github.com/elcaminodigitalOK/mabox-panel-selector.git
+ + cd mabox-panel-selector
+ + chmod +x src/*.py src/*.sh
+ + makepkg -f
+ + ejecutar la aplicacion con el comando "mabox-panel-selector"
+   
 
-1. Descarga el último archivo `mabox-panel-selector-X.X.tar.gz`
-2. Extrae el archivo: tar -xzf `mabox-panel-selector-X.X.tar.gz`
+## Desinstalacion
 
-3. Entra al directorio y ejecuta el instalador:
+  + sudo pacman -R mabox-panel-selector
+  + borrar archivos residuales :
+    + sudo rm -rf /usr/share/mabox-panel-selector
+sudo rm -f /usr/bin/mabox-panel-selector
+sudo rm -f /usr/share/applications/mabox-panel-selector.desktop
 
-cd mabox-panel-selector-X.X
-
-./install.sh
-
-
-
-
-
-## Uso
-
-1. Abre el selector de paneles desde el menú de aplicaciones o ejecuta:
-mabox-panel-selector
-
-
-2. Selecciona el panel que deseas usar (tint2 o polybar)
-
-3. Haz clic en "Configurar" para personalizar el panel elegido
-
-4. Haz clic en "Aplicar como predeterminado" para que el panel se inicie automáticamente con la sesión
-
-## Temas de Polybar
-
-La aplicación incluye temas predeterminados para polybar. Para agregar más temas:
-
-1. Selecciona polybar y haz clic en "Configurar"
-2. Haz clic en "Importar" y selecciona el directorio que contiene el tema
-3. También puedes hacer clic en "Obtener más temas" para buscar temas en línea
-
-## Desinstalación
-
-Ejecuta el script de desinstalación:
-~/.local/share/mabox-panel-selector/uninstall.sh
 
 
 
